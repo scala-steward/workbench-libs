@@ -1,0 +1,16 @@
+name: Update TRAVIS-REPLACE-ME
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Check output
+        run: scripts/version_update.sh
