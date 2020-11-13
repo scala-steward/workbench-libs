@@ -4,6 +4,9 @@ This file documents changes to the `workbench-google2` library, including notes 
 
 ## 0.16
 
+Added:
+- Add `setNodepoolAutoscaling` and `setNodepoolSize` to `GKEService`
+
 Changed:
 - Add `subscriptionName: Option[ProjectSubscriptionName]`, `deadLetterPolicy: Option[SubscriberDeadLetterPolicy]` and `filter: Option[String]` to `SubscriberConfig`
 
